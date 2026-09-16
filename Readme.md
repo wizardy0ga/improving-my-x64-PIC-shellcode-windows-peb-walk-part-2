@@ -60,3 +60,15 @@ hash:
     inc r11                     ; increment string position index 
     jmp hash                    ; hash next byte
 ```
+
+# Demo
+
+## Kernel32 Dynamic Parsing
+A demonstration of the [pebwalk-hash-k32-parse](/pebwalk-hash-k32-parse.x64.asm) shellcode where kernel32 is dynamically parsed from the InLoadOrderModuleList via BaseDllName analysis.
+
+![demo](/img/k32-parse-demo.gif)
+
+## Kernel32 Static Parsing
+A demonstration of the [pebwalk-hash-k32-deref](/pebwalk-hash-k32-deref.x64.asm) shellcode where kernel32 is statically dereferenced from the InLoadOrderModuleList without verifying that the LDR_DATA_TABLE_ENTRY structure is actually kernel32.
+
+![demo](/img/k32-deref-demo.gif)
