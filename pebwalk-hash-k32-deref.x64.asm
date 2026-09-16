@@ -8,6 +8,9 @@
 ; Assemble: nasm -f win64 pebwalk-hash-k32-deref.x64.asm
 ; Link: link.exe /subsystem:console /entry:main pebwalk-hash-k32-deref.x64.obj
 ;
+; Tested on:
+;   - Windows 10 Pro 22H2 19045.6466
+;   - Windows 11 Pro 25H2 26200.9445
 bits 64
 default rel
 global main
